@@ -4,7 +4,7 @@ CFLAGS = -Wall -std=c99
 all: main
 
 main: $(OBJ)
-  gcc $(CFLAGS) $(OBJ) -o main
+	gcc $(CFLAGS) $(OBJ) -o main
 
 %.o : %.c
 	gcc $(CFLAGS) -c $<
